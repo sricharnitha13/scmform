@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit', (req, res) => {
-    const { name, email, phone, event,age } = req.body;
+    const { id,name, email, phone, event,age  } = req.body;
 
     console.log("User Registered:");
-    console.log(name, email, phone, event,age);
+    console.log(id,name, email, phone, event,age);
 
     res.send("Registration Successful!");
 });
